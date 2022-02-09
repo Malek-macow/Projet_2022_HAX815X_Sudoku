@@ -89,10 +89,7 @@ generate_sudoku = function(){
         break
       }
     }
-  }
-  for (i in c(0,3,6)){
-    A[,(1:3)+i] = A[,(1:3)+i][,sample(ncol(A[,(1:3)+i]))]
-    A[(1:3)+i,] = A[(1:3)+i,][sample(nrow(A[(1:3)+i,])),]
+    permu_aleat(A)
   }
   return(A)
 }
