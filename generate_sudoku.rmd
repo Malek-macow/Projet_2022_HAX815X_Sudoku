@@ -16,8 +16,6 @@ permu_aleat = function (A){
 
 ## Fonction `generate_sudoku` :
 
-Cette fonction génère un sudoku en utilisant les deux fonction `Lidentic` est `Cidentic`
-
 ```{r}
 generate_sudoku = function(A) {
   A = matrix(NA, nrow=9, ncol=9)
