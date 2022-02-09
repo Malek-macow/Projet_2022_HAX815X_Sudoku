@@ -1,0 +1,38 @@
+#' Affiche un sudoku élémentaire
+#'
+#' @param Sudoku (Matrice 9x9)
+#' @return Affichage graphique du sudoku
+#'
+
+
+
+
+
+
+plot_sudoku = function(A){
+  plot(1, type='n', xlab="", ylab="", xlim=c(0,10), ylim=c(0,10), axes=FALSE)
+  
+  for (i in seq(.5, 9.5, 3)){
+    lines(c(.5, 9.5), c(i, i), lwd=3)
+    lines(c(i, i), c(.5, 9.5), lwd=3)
+    }
+    
+  for (i in seq(.5, 9.5, 1)){
+    lines(c(.5, 9.5), c(i, i), lwd=1, col="blue")
+    lines(c(i, i), c(.5, 9.5), lwd=1, col="blue")
+    }
+    
+  for (i in 1:9){
+    text(i, 10, i)
+    text(0, i ,(10-i))
+    text(10, i, (10-i))
+    text((10-i), 0, (10-i))
+    }
+    
+  for (i in 1:9){
+    for (j in 1:9){
+      text((10-j), (10-i),A[i, (10-j)])
+      }
+  }
+  return(A)
+}
