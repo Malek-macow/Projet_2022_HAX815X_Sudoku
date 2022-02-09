@@ -47,6 +47,18 @@ Pour les colonnes :
 Cidentic(A,B)
 ```
 
+## Fonction `permut_aleat` :
+c'est une fonction qui prend un sudoku (Matrice 9X9) et qui permute les lignes et les colonnes aléatoirement en prenant en compte que la permutation se fait par bloc (bloc de 3X9 ou 9X3).
+
+```{r}
+permu_aleat = function (A){
+  for (i in c(0,3,6)){
+  A[,(1:3)+i]=A[,(1:3)+i][,sample(ncol(A[,(1:3)+i]))]
+  A[(1:3)+i,]=A[(1:3)+i,][sample(nrow(A[(1:3)+i,])),]}
+  return(A)
+}
+```
+
 ## Fonction `generate_sudoku` :
 
 Cette fonction génère un sudoku en utilisant les deux fonction `Lidentic` est `Cidentic`
