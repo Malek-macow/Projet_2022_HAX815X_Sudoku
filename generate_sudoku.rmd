@@ -17,7 +17,7 @@ permu_aleat = function (A){
 ## Fonction `generate_sudoku` :
 
 ```{r}
-generate_sudoku = function(A) {
+generate_sudoku = function() {
   A = matrix(NA, nrow=9, ncol=9)
   A[1,] = sample(1:9)
   t = 1:3
