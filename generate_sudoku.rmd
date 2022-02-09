@@ -1,6 +1,8 @@
 ---
 title: "Generer un Sudoku"
-output: html_notebook
+output:
+  html_notebook: default
+  pdf_document: default
 ---
 ## Fonction `permut_aleat` :
 c'est une fonction qui prend un sudoku (Matrice 9X9) et qui permute les lignes et les colonnes aléatoirement en prenant en compte que la permutation se fait par bloc (bloc de 3X9 ou 9X3).
