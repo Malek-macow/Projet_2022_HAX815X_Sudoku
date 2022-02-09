@@ -1,6 +1,8 @@
 ---
 title: "Generer un Sudoku"
-output: html_notebook
+output:
+  html_notebook: default
+  pdf_document: default
 ---
 
 ## Fonction `Lidentic` :
