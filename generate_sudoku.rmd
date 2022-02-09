@@ -2,51 +2,6 @@
 title: "Generer un Sudoku"
 output: html_notebook
 ---
-
-## Fonction `Lidentic` :
-
-c'est une fonction qui vérifie si la iéme ligne de deux matrices est identique, elle renvoie **True** si c'est le cas et **False** sinon.
-
-```{r}
-Lidentic = function(A,B){
-  if (A[1,] != B[1,] && A[2,] != B[2,] && A[3,] != B[3,] ){FALSE}
-  else {TRUE}
-}
-
-```
-
-## Fonction `Cidentic` :
-
-c'est une fonction qui vérifie si la jéme colonne de deux matrices est identique, elle renvoie **True** si c'est le cas et **False** sinon..
-
-```{r}
-Cidentic = function(A,B){
-  if (A[,1] != B[1,] && A[,2] != B[,2] && A[,3] != B[,3] ){FALSE}
-  else {TRUE}
-}
-```
-
-## Exemple :
-
-On vérifie si la iéme ligne des deux matrices suivantes est la méme
-
-```{r}
-A=matrix(1:3,3,3, byrow = F)
-B=matrix(2,3,3)
-A
-B
-```
-
-```{r}
-Lidentic(A,B)
-```
-
-Pour les colonnes :
-
-```{r}
-Cidentic(A,B)
-```
-
 ## Fonction `permut_aleat` :
 c'est une fonction qui prend un sudoku (Matrice 9X9) et qui permute les lignes et les colonnes aléatoirement en prenant en compte que la permutation se fait par bloc (bloc de 3X9 ou 9X3).
 
@@ -64,42 +19,18 @@ permu_aleat = function (A){
 Cette fonction génère un sudoku en utilisant les deux fonction `Lidentic` est `Cidentic`
 
 ```{r}
-generate_sudoku = function(){
+generate_sudoku = function(A) {
   A=matrix(NA,nrow=9,ncol=9)
-  A[1:3,1:3] = matrix(sample(c(1:9)),3,3)
-
-  repeat {
-    A[1:3,4:6] = A[1:3,1:3][sample(nrow(A[1:3,1:3])),]
-    if (Lidentic(A[1:3,4:6],A[1:3,1:3])== FALSE)
-    {
-      break
-    }
-  }
-  
-  repeat {
-    A[1:3,7:9] = A[1:3,1:3][sample(nrow(A[1:3,1:3])),]
-    if (Lidentic(A[1:3,7:9],A[1:3,1:3]) == FALSE &&
-        Lidentic(A[1:3,7:9],A[1:3,4:6]) == FALSE)
-    {
-      break
-    }
-  }
-  
-  for (i in c(0,3,6)){
-    repeat {
-      A[4:6,(1:3)+i] = A[1:3,(1:3)+i][,sample(ncol(A[1:3,(1:3)+i]))]
-      if (Cidentic(A[4:6,(1:3)+i],A[1:3,(1:3)+i]) == FALSE)
-      {
-        break
-      }
-    }
-    repeat {
-      A[7:9,(1:3)+i] = A[1:3,(1:3)+i][,sample(ncol(A[1:3,(1:3)+i]))]
-      if (Cidentic(A[7:9,(1:3)+i], A[1:3,(1:3)+i]) == FALSE &&
-          Cidentic(A[7:9,(1:3)+i], A[4:6,(1:3)+i]) == FALSE)
-      {
-        break
-      }
+  A[1,]=sample(1:9)
+  t=1:3
+  for ( i in seq(0,6,3)){
+    A[2,t+(i+3)%%9]=A[1,t+i]
+    A[3,t+(i+6)%%9]=A[1,t+i]}
+  for (k in c(0,3,6)){
+    for (i in c(1,2)){
+      for (j in c(0,3)){
+        A[(t+3)+j,(i+1)+k] = A[t+j,i+k]
+        A[(t+3)+j,1+k]=A[t+j,3+k]}
     }
     permu_aleat(A)
   }
