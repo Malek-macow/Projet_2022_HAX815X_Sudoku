@@ -7,7 +7,7 @@
 
 
 sudo_ele <- function(){
-  A <- matrix(0, 9, 9)   # création de la matrice
+  A <- matrix(NA, 9, 9)   # création de la matrice
   A[1,] <- sample((1:9)) # on commence à générer une ligne aléatoire 
   
   # les trois blocs du haut
