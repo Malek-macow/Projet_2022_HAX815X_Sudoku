@@ -1,6 +1,6 @@
 #' Affiche un sudoku élémentaire
 #'
-#' @param Sudoku (Matrice 9x9)
+#' @param Matrice 9x9
 #' @return Affichage graphique du sudoku
 #'
 
@@ -24,14 +24,14 @@ plot_sudoku = function(A){
     
   for (i in 1:9){
     text(i, 10, i)
-    text(0, i ,(10-i))
+    text(0, i , (10-i))
     text(10, i, (10-i))
     text((10-i), 0, (10-i))
     }
     
   for (i in 1:9){
     for (j in 1:9){
-      text((10-j), (10-i),A[i, (10-j)])
+      text((10-j), (10-i), A[i, (10-j)])
       }
   }
   return(A)
