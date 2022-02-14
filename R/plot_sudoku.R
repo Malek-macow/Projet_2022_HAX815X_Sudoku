@@ -1,6 +1,6 @@
 #' Affiche un sudoku élémentaire
 #'
-#' @param Matrice 9x9
+#' @param A, Matrice 9x9
 #' @return Affichage graphique du sudoku
 #'
 
