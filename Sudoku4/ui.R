@@ -11,7 +11,6 @@ shinyUI(fluidPage(
 
         mainPanel(
             verbatimTextOutput("passudoku"),
-            plotOutput("sudoku")
-        )
+            plotOutput("sudoku")        )
     )
 ))

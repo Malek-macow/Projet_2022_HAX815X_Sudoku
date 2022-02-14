@@ -1,15 +1,14 @@
-# Attention, pour que ça fonctionne il faut pour l'instant initialisé sudo_ele sinon il
-# sait pas de quoi on parle.
+# Il faut toujours faire attention à bien appeler les bonnes fonctions.... mais
+# on a un début de quelque chose
 
 library(shiny)
-library(DT)
 
 shinyServer(function(input, output) {
     v <- reactiveValues(affiche="Pas init", sudo = matrix(NA, 9,9))
 
     observeEvent(input$Nouveau, {
         v$affiche <- "Wow"
-        v$sudo <- sudo_ele()
+        v$sudo_sol <- sudo_ele()
         })
 
     observeEvent(input$Solution, {
@@ -22,6 +21,7 @@ shinyServer(function(input, output) {
 
     })
 
-    output$sudoku <- renderPlot({plot_sudoku(v$sudo)})
-
+    output$sudoku <- renderPlot({
+        if (v$affiche == "Pour la soluce"){plot_sudoku(v$sudo_sol)}
+        if (v$affiche == "Wow"){plot_sudoku(play_sudo(v$sudo_sol))}})
 })
