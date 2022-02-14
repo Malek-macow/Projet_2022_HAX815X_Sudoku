@@ -7,7 +7,7 @@
 #'
 
 get_possibility = function(A){
-  df = get_zeros(A)
+  df = get_na(A)
   P = matrix(0, 9, 9)
   for (i in (1:length(df$i))){
     X = 0
