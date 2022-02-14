@@ -22,10 +22,6 @@ shinyServer(function(input, output) {
 
     })
 
-    output$sudoku <- renderDT({
-        datatable(data=v$sudo, class  = "cell-border", rownames = FALSE,
-                  colnames = FALSE, option = list(dom='t'))
-
-        })
+    output$sudoku <- renderPlot({plot_sudoku(v$sudo)})
 
 })
