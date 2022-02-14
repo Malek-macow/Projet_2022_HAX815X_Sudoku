@@ -1,0 +1,44 @@
+---
+title: "Exmple"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+**Remarque** Il faut d'abord exécuter toutes les fonctions que j'ai mis sur le git pour que l'exemple marche normalement
+
+On prend un sudoku (matrice 9x9) avec des valeurs manquantes (ici des zéros mais il faut les changer après avec des NA)
+
+```{r}
+A<- matrix(data=c(
+  6,0,0,2,1,0,0,3,0,
+  5,0,9,0,0,0,6,0,0,
+  2,0,0,9,7,0,0,0,4,
+  0,0,2,3,0,4,0,0,0,
+  0,6,0,0,5,0,0,9,0,
+  0,0,0,1,0,9,7,0,0,
+  9,0,0,0,3,8,0,0,6,
+  0,0,7,0,0,0,2,0,5,
+  0,8,0,0,4,2,0,0,9), nrow=9, ncol=9, byrow=FALSE
+)
+```
+
+# `get_zeros`
+
+la fonction elle renvoie une base de données qui contient les coordonnées des cases qui sont vides (ici remplis par des zéros) - i contient les numéro des lignes et j les numéro des colonnes
+
+```{r}
+get_zeros(A)
+
+```
+
+# `get_possibility`
+
+cette fonction calcule pour chaque case vide du sudoku le nombre de chiffre possible à mettre dans cette dernière et elle renvoie une matrice remplis par le nombre de possibilités
+
+```{r}
+get_possibility(A)
+
+```
+
+la fonction `get_possibility` utilise la fonction `is_possible` qui utilise a son tour les 3 fonctions : `in_line`, `in_col`, `in_bloc` ( la fonction `in_bloc` utilise les deuc fonction `get_Cbloc` et `get_Lbloc` )
