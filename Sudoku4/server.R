@@ -1,5 +1,6 @@
 # Il faut toujours faire attention à bien appeler les bonnes fonctions.... mais
 # on a un début de quelque chose
+# WARNING : installer le package shinythemes
 
 library(shiny)
 
@@ -8,7 +9,7 @@ shinyServer(function(input, output) {
 
     observeEvent(input$Nouveau, {
         v$affiche <- "Wow"
-        v$sudo_sol <- sudo_ele()
+        v$sudo_sol <- get_sudo(sudo_ele())
         })
 
     observeEvent(input$Solution, {
@@ -22,6 +23,7 @@ shinyServer(function(input, output) {
     })
 
     output$sudoku <- renderPlot({
+        if (v$affiche == "Pas init"){plot_sudoku(v$sudo_sol)}
         if (v$affiche == "Pour la soluce"){plot_sudoku(v$sudo_sol)}
         if (v$affiche == "Wow"){plot_sudoku(play_sudo(v$sudo_sol))}})
 })

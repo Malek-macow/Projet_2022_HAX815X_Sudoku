@@ -9,7 +9,7 @@
 
 play_sudo <- function(A){
   for (i in (1:63)){
-    a <- sample((1:9))
+    a <- sample((1:9),2)
     A[a[1],a[2]] = NA
   }
   return(A)
