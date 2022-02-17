@@ -2,7 +2,7 @@
 #'
 #' @param A Matrice  9x9
 #'
-#' @return Matrice 9x9 qui contient dans chaque case le nombre de chiffre possible à mettre dans cette case.
+#' @return Liste qui contient une matrice 9x9 (avec les cases remplis par le nombre de possiblités) et une Dataframe 
 #'
 #'
 
