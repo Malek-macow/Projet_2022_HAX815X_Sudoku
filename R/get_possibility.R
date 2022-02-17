@@ -16,6 +16,20 @@ get_possibility = function(A){
       P[df$i[i] , df$j[i]]=X
     }
   }
-  return(P)
+  df <- data.frame(i=NULL,j=NULL)
+  for (i in 1:9){
+    for (j in 1:9){
+      for ( k in 1:9){
+        if (P[i,j] == k) {
+          a <- data.frame(i,j,k)
+          df <- rbind(df, a)
+        }
+      }
+    }
+  }
+  df = df[order(df[,3],decreasing=F), ]
+  
+  Liste=list(Matrice =P, Dataframe = df)
+  return(Liste)
 }
 
