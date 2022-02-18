@@ -1,15 +1,15 @@
-#' VÈrifie si un chiffre existe dÈj‡ dans un bloc 3x3 donnÈe
+#' V√©rifie si un chiffre existe d√©j√† dans un bloc 3x3 donn√©e
 #'
 #' @param A Matrice
-#' @param nrow NumÈro de la ligne
-#' @param ncol NumÈro de la colonne
-#' @param num Un chiffre de 1 ‡ 9
+#' @param nrow Num√©ro de la ligne
+#' @param ncol Num√©ro de la colonne
+#' @param num Un chiffre de 1 √† 9
 #'
-#' @return True si le chiffre existe dÈj‡ dans le bloc 3x3 et False sinon.
+#' @return True si le chiffre existe d√©j√† dans le bloc 3x3 et False sinon.
 #'
 
 
 in_bloc = function(A, nrow, ncol, num){
-  num %in% A[get_Lbloc(nrow), get_Cbloc(ncol)]
+  num %in% A[(nrow-1)%/%3 *3 +(1:3), (ncol-1)%/%3 *3 +(1:3)]
 }
 
