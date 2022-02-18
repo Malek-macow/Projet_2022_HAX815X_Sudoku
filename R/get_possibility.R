@@ -12,7 +12,7 @@ get_possibility = function(A){
   for (i in (1:length(df$i))){
     X = 0
     for (k in (1:9)){
-      if (is_possible(A, df$i[i] , df$j[i], k) == TRUE){X=X+1}
+      if (is_possible(A, df$i[i] , df$j[i], k)){X=X+1}
       P[df$i[i] , df$j[i]]=X
     }
   }
