@@ -3,16 +3,55 @@ library(shinythemes)
 library(shinyWidgets)
 
 shinyUI(fluidPage(theme = shinytheme("superhero"),
-    titlePanel("Sudoku4"),
+    titlePanel(h1(strong(em(HTML("Sudoku4"))),), windowTitle = "Jeu de Sudoku"),
 
+    p(HTML("Développé par "), em(HTML("BOUARROUDJ Abdelmalek")),
+      HTML("et"), em(HTML("CAPEL Alexandre."))),
+    hr(),
     sidebarLayout(
         sidebarPanel(
-            actionBttn("Nouveau", label = "Générer nouveau Sudoku", style ="stretch",
-                       color = 'default'),
-            actionBttn("Solution", label = "Solution", style = "gradient", color='succes')
-        ),
+            p(strong(HTML("Règles du jeu : \n "))),
+            p(HTML(text = "Remplir les cases vides avec les chiffres de 1 à 9,
+                   de telle sorte qu'ils n'apparaissent qu'une fois par ligne,
+                   par colonne et par carré de 3x3 cases. Bon courage :)")),
+            br(),
+            fixedRow(
+                column(2,
+                       p(HTML("   "))
+                       ),
+                column(10,
+                       actionBttn("Nouveau", label = "Générer nouveau Sudoku",
+                                  style ="stretch",color = 'default')
+                       )
+                ),
+            hr(),
+            h3(strong(HTML("Options de jeu"))),
+            br(),
+            fixedRow(
+                sliderTextInput(inputId = "difficulte :", label = h5(HTML("Sélectionner la difficulté :")),
+                            choices=c("Novice","Facile", "Moyen", "Dur", "Cauchemar")
+                            )
+            ),
+            br(),
+            fixedRow(
+                column(2,
+                       p(HTML("  "))
+                       ),
+                column(10,
+                    actionBttn("Solution", label = "Afficher la solution",
+                               style = "gradient", color='succes')
+                    )
+                )
+            ),
+
         mainPanel(
             verbatimTextOutput("passudoku"),
-            plotOutput("sudoku")        )
-    )
-))
+
+            fluidRow(plotOutput("sudoku")),
+            hr(),
+            p(HTML("Application développée avec R Shiny, code disponible sur notre "),
+              a(href="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku",
+                "git"),HTML('.'))
+            )
+        )
+    ))
