@@ -15,7 +15,7 @@ On prend un sudoku (matrice 9x9) avec des valeurs manquantes (avec des NA)
  
  On génére un sudoku aleatoire avec la fonction  `sudo_ele` puis on le vide avec la fonction `play_sudo`
  
- ```{r}
- sudoku = play_sudo(sudo_ele())
- solve_sudo(sudoku)
- ```
+```{r}
+sudoku = play_sudo(sudo_ele())
+solve_sudo(sudoku)
+```

@@ -12,7 +12,7 @@ solve_sudo = function(sudoku){
 
   df = get_possibility(sudoku)$Dataframe #base de donnée qui contient les coordonnées des cases vides
 
-  A <<- trans(sudoku) #transformer les NA en 0 pour pouvoir utiliser la fonction solve_case
+  A <<- transfo(sudoku) #transformer les NA en 0 pour pouvoir utiliser la fonction solve_case
 
   c = 1
   nbr_ofback = 0 #initier le nombre de retour en 0
