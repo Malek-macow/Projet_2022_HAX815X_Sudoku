@@ -21,7 +21,7 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
                        ),
                 column(10,
                        actionBttn("Nouveau", label = "Générer nouveau Sudoku",
-                                  style ="stretch",color = 'default')
+                                  style ="stretch",color = "warning")
                        )
                 ),
             hr(),
@@ -39,7 +39,7 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
                        ),
                 column(10,
                     actionBttn("Solution", label = "Afficher la solution",
-                               style = "gradient", color='succes')
+                               style = "gradient", color='warning')
                     )
                 )
             ),
