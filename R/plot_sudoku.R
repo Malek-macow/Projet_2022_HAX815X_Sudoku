@@ -1,8 +1,8 @@
-#' Affiche un sudoku élémentaire
+#' Affiche un sudoku.
 #'
-#' @param Matrice 9x9
+#' @param A, Matrice 9x9
 #' @return Affichage graphique du sudoku
-#'
+#' @importFrom graphics lines text
 
 
 

@@ -7,9 +7,11 @@
 in_col(A, ncol, num)
 }
 \arguments{
-\item{ncol}{numéro de la colonne}
+\item{A, }{Matrice}
 
-\item{num}{un chiffre de 1 à 9}
+\item{ncol, }{numéro de la colonne}
+
+\item{num, }{un chiffre de 1 à 9}
 }
 \value{
 True si le chiffre existe déjà dans la colonne et False sinon.

@@ -1,6 +1,6 @@
 #' Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.
 #'
-#' @param M, Matrice 9x9
+#' @param A, Matrice 9x9
 #' @return Une matrice 9x9 de sudoku prête à jouer.
 #'
 #'

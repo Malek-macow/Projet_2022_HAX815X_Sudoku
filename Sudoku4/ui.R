@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(shinyWidgets)
+devtools::load_all()
 
 shinyUI(fluidPage(theme = shinytheme("superhero"),
     titlePanel(h1(strong(em(HTML("Sudoku4"))),), windowTitle = "Jeu de Sudoku"),
@@ -28,7 +29,7 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
             h3(strong(HTML("Options de jeu"))),
             br(),
             fixedRow(
-                sliderTextInput(inputId = "difficulte :", label = h5(HTML("Sélectionner la difficulté :")),
+                sliderTextInput(inputId = "difficulte", label = h5(HTML("Sélectionner la difficulté :")),
                             choices=c("Novice","Facile", "Moyen", "Dur", "Cauchemar")
                             )
             ),
@@ -47,7 +48,13 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
         mainPanel(
             verbatimTextOutput("passudoku"),
 
-            fluidRow(plotOutput("sudoku")),
+            fluidRow(
+              column(2,
+                     p(HTML("  "))
+                     ),
+              column(10,
+                     plotOutput("sudoku"))
+              ),
             hr(),
             p(HTML("Application développée avec R Shiny, code disponible sur notre "),
               a(href="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku",

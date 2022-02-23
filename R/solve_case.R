@@ -12,9 +12,9 @@
 
 solve_case = function(A, nrow, ncol) {
 
-  valactu = A[nrow, ncol] #On enrigistre le chiffre de la case en premier
+  valactu = A[nrow, ncol] #On enregistre le chiffre de la case en premier
 
-  if (valactu == 9) { #si le chiffre déjç dans la case est 9 on le remet à zero
+  if (valactu == 9) { #si le chiffre déjà dans la case est 9 on le remet à zero
     A[nrow, ncol]<<- 0
     return(FALSE)}
 

@@ -10,7 +10,7 @@ get_possibility(A)
 \item{A}{Matrice  9x9}
 }
 \value{
-Matrice 9x9 qui contient dans chaque case le nombre de chiffre possible à mettre dans cette case.
+Liste qui contient une matrice 9x9 (avec les cases remplis par le nombre de possiblités) et une Dataframe
 }
 \description{
 Calcule le nombre de possibilité pour chaque case du sudoku (matrice 9x9)

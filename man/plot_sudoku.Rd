@@ -2,16 +2,16 @@
 % Please edit documentation in R/plot_sudoku.R
 \name{plot_sudoku}
 \alias{plot_sudoku}
-\title{Affiche un sudoku élémentaire}
+\title{Affiche un sudoku.}
 \usage{
 plot_sudoku(A)
 }
 \arguments{
-\item{Matrice}{9x9}
+\item{A, }{Matrice 9x9}
 }
 \value{
 Affichage graphique du sudoku
 }
 \description{
-Affiche un sudoku élémentaire
+Affiche un sudoku.
 }

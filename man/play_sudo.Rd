@@ -7,10 +7,13 @@
 play_sudo(A)
 }
 \arguments{
-\item{M, }{Matrice 9x9}
+\item{A, }{Matrice 9x9}
 }
 \value{
 Une matrice 9x9 de sudoku prête à jouer.
+
+
+Note : l'algorithme est encore élémentaire mais ce n'est qu'une esquisse
 }
 \description{
 Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.
