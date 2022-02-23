@@ -4,7 +4,6 @@
 #' @return Liste qui contient le sudoku résolu et le nombre de retour que l'algorithme a fait pour le résoudre
 #'
 #'
-#'
 
 
 

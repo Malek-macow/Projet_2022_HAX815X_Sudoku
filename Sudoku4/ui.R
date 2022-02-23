@@ -30,7 +30,7 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
             br(),
             fixedRow(
                 sliderTextInput(inputId = "difficulte", label = h5(HTML("Sélectionner la difficulté :")),
-                            choices=c("Novice","Facile", "Moyen", "Dur", "Cauchemar")
+                            choices=c("Facile", "Moyen", "Difficile", "Cauchemar")
                             )
             ),
             br(),
