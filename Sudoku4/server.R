@@ -3,7 +3,10 @@ library(shinyWidgets)
 devtools::load_all()
 
 shinyServer(function(input, output) {
-    v <- reactiveValues(affiche="Pas de sudoku initialisé", sudo = matrix(NA, 9,9))
+    v <- reactiveValues(affiche="Pas de sudoku initialisé",
+                        sudo = matrix(NA, 9,9),
+                        sol = matrix(NA, 9,9),
+                        mess = "Bonne partie ;)")
 
     observeEvent(input$Nouveau, {
         tout <- game(input$difficulte)
@@ -16,6 +19,19 @@ shinyServer(function(input, output) {
     observeEvent(input$Solution, {
         v$affiche <- "Voici la solution :"
     })
+
+    observeEvent(input$mAj, {
+        i <- input$ligne
+        j <- input$colonne
+        val <- input$valeur
+        v$sudo[i, j] <- val
+        if (v$sudo[i,j]!=v$sol[i,j]){
+            v$sudo[i, j] <- NA
+            v$mess <- "Oops, ce n'est pas juste :'("
+        }else{
+            v$mess <- paste("Bien joué ! Continuez :)", emoji("smiley"), sep="")
+        }
+    })
     output$passudoku <- renderPrint({
         return(v$affiche)
         })
@@ -24,4 +40,8 @@ shinyServer(function(input, output) {
         if (v$affiche == "Voici la solution :"){plot_sudoku(v$sol)}
         else{plot_sudoku(v$sudo)}
     }, width = 400, height = 400)
+
+    output$juste <- renderPrint({
+        return(v$mess)
+    })
 })
