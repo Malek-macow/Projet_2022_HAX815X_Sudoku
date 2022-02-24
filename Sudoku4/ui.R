@@ -27,19 +27,30 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
                 ),
             hr(),
             p(strong(HTML(" Remplir le Sudoku :"))),
-            fluidRow(column(
-                            autonumericInput(inputId = "ligne", label = "Ligne", value = 1,
-                           minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                           currencySymbolPlacement = "p", width = '50%'), width = 3),
+            fluidRow(
+              column(
+                autonumericInput(inputId = "ligne", label = "Ligne", value = 1,
+                                 minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
+                                 currencySymbolPlacement = "p", width = '50%'),
+                width = 3
+                ),
               column(
                 autonumericInput(inputId = "colonne", label = "Colonne", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 width = '50%'),width = 3),
+                                 width = '50%'),
+                width = 3
+                ),
               column(
                 autonumericInput(inputId = "valeur", label = "Valeur", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 width = '50%'),width = 3),
-              column(actionBttn(inputId = "mAj", label ="Valider", style = 'gradient',color = "warning"), width = 2)
+                                 width = '50%'),
+                width = 3
+                ),
+              column(
+                actionBttn(inputId = "mAj", label ="Valider",
+                           style = 'gradient',color = "warning"),
+                width = 2
+                )
             ),
             h3(strong(HTML("Options de jeu"))),
             br(),

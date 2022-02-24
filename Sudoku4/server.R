@@ -29,7 +29,7 @@ shinyServer(function(input, output) {
             v$sudo[i, j] <- NA
             v$mess <- "Oops, ce n'est pas juste :'("
         }else{
-            v$mess <- paste("Bien joué ! Continuez :)", emoji("smiley"), sep="")
+            v$mess <- "Bien joué ! Continuez :)"
         }
     })
     output$passudoku <- renderPrint({
