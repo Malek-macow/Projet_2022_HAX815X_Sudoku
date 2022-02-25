@@ -21,6 +21,7 @@ shinyServer(function(input, output) {
     })
 
     observeEvent(input$mAj, {
+        if(!all(is.na(v$sudo))){
         i <- input$ligne
         j <- input$colonne
         val <- input$valeur
@@ -30,7 +31,8 @@ shinyServer(function(input, output) {
             v$mess <- "Oops, ce n'est pas juste :'("
         }else{
             v$mess <- "Bien joué ! Continuez :)"
-        }
+    }
+    }
     })
     output$passudoku <- renderPrint({
         return(v$affiche)
