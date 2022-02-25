@@ -31,19 +31,19 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
               column(
                 autonumericInput(inputId = "ligne", label = "Ligne", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 currencySymbolPlacement = "p", width = '50%'),
+                                 currencySymbolPlacement = "p", width = 50),
                 width = 3
                 ),
               column(
                 autonumericInput(inputId = "colonne", label = "Colonne", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 width = '50%'),
+                                 width = 50),
                 width = 3
                 ),
               column(
                 autonumericInput(inputId = "valeur", label = "Valeur", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 width = '50%'),
+                                 width = 50),
                 width = 3
                 ),
               column(
