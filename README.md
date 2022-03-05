@@ -23,7 +23,7 @@ Ces modules seront utiles pour lancer l'application.
 
 ### Lancement de l'application
 
-Pour pouvoir commencer à jouer avec l'application, il suffit d'ouvrir le fichier `server.R` ou `ui.R` situé dans le dossier `Sudoku4` et de cliquer sur le bouton "Run app" situé en faut du fichier : 
+Pour pouvoir commencer à jouer avec l'application, il suffit d'ouvrir le fichier `server.R` ou `ui.R` situés dans le dossier `Sudoku4` et de cliquer sur le bouton "Run app" situé en haut du fichier : 
 
 <p align="center">
   <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/run_app.jpg" width="10000" title="Lancer l'application">
