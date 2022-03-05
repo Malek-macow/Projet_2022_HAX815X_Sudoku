@@ -1,7 +1,7 @@
 # Projet Sudoku
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![GitHub contributors](https://badgen.net/github/contributors/Naereen/Strapdown.js)](https://github.com/Eldohrim/Project_2021_HAX712X/graphs/contributors)
+[![GitHub contributors](https://badgen.net/github/contributors/Naereen/Strapdown.js)](https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/graphs/contributors)
 
 Ce dépôt git regroupe un package et une application `shiny` pour le développement d'un jeu de sudoku fait dans le cadre d'un projet du module HAX815X. Les programmes on été développés par BOUARROUDJ Abdelmalek et CAPEL Alexandre.
 
