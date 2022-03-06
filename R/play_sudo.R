@@ -4,7 +4,7 @@
 #' @return Une matrice 9x9 de sudoku prête à jouer.
 #'
 #'
-#' Note : l'algorithme est encore élémentaire mais ce n'est qu'une esquisse
+#' 
 
 
 play_sudo <- function(A){
