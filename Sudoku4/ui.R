@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(shinyWidgets)
+library(shinyalert)
 devtools::load_all()
 
 shinyUI(fluidPage(theme = shinytheme("superhero"),
@@ -28,18 +29,8 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
             hr(),
             p(strong(HTML(" Remplir le Sudoku :"))),
             fluidRow(
-              column(
-                autonumericInput(inputId = "ligne", label = "Ligne", value = 1,
-                                 minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 currencySymbolPlacement = "p", width = 50),
-                width = 3
-                ),
-              column(
-                autonumericInput(inputId = "colonne", label = "Colonne", value = 1,
-                                 minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
-                                 width = 50),
-                width = 3
-                ),
+              verbatimTextOutput("info"),
+
               column(
                 autonumericInput(inputId = "valeur", label = "Valeur", value = 1,
                                  minimumValue = 1, maximumValue = 9, decimalPlaces = 0,
@@ -48,9 +39,14 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
                 ),
               column(
                 actionBttn(inputId = "mAj", label ="Valider",
-                           style = 'gradient',color = "warning"),
-                width = 2
-                )
+                           style = 'gradient',color = "warning", size="md"),
+                width = 12
+                ),
+              column(
+                actionBttn(inputId = "sup", label ="Supprimer",
+                           style = 'gradient',color = "warning", size="md"),
+                width = 5
+              )
             ),
             h3(strong(HTML("Options de jeu"))),
             br(),
@@ -61,32 +57,40 @@ shinyUI(fluidPage(theme = shinytheme("superhero"),
             ),
             br(),
             fixedRow(
+                useShinyalert(),
                 column(2,
                        p(HTML("  "))
                        ),
-                column(10,
+                column(6,
                     actionBttn("Solution", label = "Afficher la solution",
                                style = "gradient", color='warning')
                     )
                 )
             ),
-
         mainPanel(
             verbatimTextOutput("passudoku"),
 
+            modalDialog("- Pour pouvoir commencer à jouer il vous suffit de choisir en bas le niveau
+            de difficulté puis de cliquer sur le bouton Générer nouveau Sudoku.",
+                        br(),
+                        "- Pour Remplir ou supprimer une case il faut d'abord cliquer sur la case que vous voulez
+            remplir puis vérifier à gauche si c'est la bonne ligne et colonne que vous avez séléctionner.",
+                        br(),
+                        "Bonne partie.",
+                        title = "A lire attentivement !",
+                        footer = modalButton("OK"),
+                        size ="l",
+                        easyClose = FALSE,
+                        fade = TRUE,
+            ),
+
             fluidRow(
-              column(2,
-                     p(HTML("  "))
-                     ),
-              column(10,
-                     plotOutput("sudoku"))
-              ),
-            br(),
-            verbatimTextOutput("juste"),
-            hr(),
+              column(12,
+                     plotOutput("plot1", click = "plot_click"),
+                     plotOutput("sudoku")),
+            ),
             p(HTML("Application développée avec R Shiny, code disponible sur notre "),
-              a(href="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku",
-                "git"),HTML('.'))
+              a(href="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku","git"),HTML('.')),
             )
         )
     ))
