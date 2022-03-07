@@ -15,6 +15,9 @@ install.packages("shinythemes")
 
 # ajout d'éléments intéractifs à l'application
 install.packages("shinyWidgets")
+
+# éléments supplémentaires de shiny
+install.packages("shinyalert")
 ```
 
 Ces modules seront utiles pour lancer l'application.
@@ -26,7 +29,7 @@ Ces modules seront utiles pour lancer l'application.
 Pour pouvoir commencer à jouer avec l'application, il suffit d'ouvrir le fichier `server.R` ou `ui.R` situés dans le dossier `Sudoku4` et de cliquer sur le bouton "Run app" situé en haut du fichier : 
 
 <p align="center">
-  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/run_app.jpg" width="10000" title="Lancer l'application">
+  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/run.jpg" width="10000" title="Lancer l'application">
 </p>
 
 Normalement une fenêtre s'ouvre à ce moment-là. Vous pouvez également ouvrir l'application dans votre navigateur en appuyant sur "Open in Browser".
@@ -37,7 +40,7 @@ Normalement un page comme celle-ci a du s'ouvrir :
 
 
 <p align="center">
-  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/sudoku.jpg" width="800" title="Sudoku vide">
+  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/sudoku.jpg" width="900" title="Sudoku vide">
 </p>  
 
 
