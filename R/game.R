@@ -16,25 +16,25 @@ game <- function(diff){
 
   if (diff == "Facile"){
     min <- 0
-    max <- 10
+    max <- 100
     N <- 40
   }
 
   if (diff == "Moyen"){
-    min <- 10
-    max <- 100
+    min <- 100
+    max <- 1000
     N <- 45
   }
 
   if (diff == "Difficile"){
-    min <- 100
-    max <- 1000
+    min <- 1000
+    max <- 10000
     N <- 50
   }
 
   if (diff == "Cauchemar"){
-    min <- 1000
-    max <- 10000
+    min <- 10000
+    max <- 1000000
     N <- 55
   }
 
