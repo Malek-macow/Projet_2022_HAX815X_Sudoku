@@ -2,20 +2,20 @@
 % Please edit documentation in R/in_col.R
 \name{in_col}
 \alias{in_col}
-\title{Vérifie si un chiffre existe déjà dans une colonne donnée}
+\title{Verifie si un chiffre existe deja dans une colonne}
 \usage{
 in_col(A, ncol, num)
 }
 \arguments{
 \item{A, }{Matrice}
 
-\item{ncol, }{numéro de la colonne}
+\item{ncol, }{numero de la colonne}
 
-\item{num, }{un chiffre de 1 à 9}
+\item{num, }{un chiffre de 1 a 9}
 }
 \value{
-True si le chiffre existe déjà dans la colonne et False sinon.
+True si le chiffre existe deja dans la colonne et False sinon.
 }
 \description{
-Vérifie si un chiffre existe déjà dans une colonne donnée
+Verifie si un chiffre existe deja dans une colonne
 }

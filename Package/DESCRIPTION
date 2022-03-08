@@ -1,9 +1,9 @@
-Package: SudokuR
+Package: MALEX
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: BOUARROUDJ Abdelmalek & CAPEL Alexandre
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer:  BOUARROUDJ Abdelmalek & CAPEL Alexandre <abdelmalek.bouarroudj@etu.umontpellier.fr>, <alexandre.capel@etu.umontpellier.fr>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE

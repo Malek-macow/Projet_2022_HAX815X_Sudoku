@@ -2,7 +2,7 @@
 % Please edit documentation in R/play_sudo.R
 \name{play_sudo}
 \alias{play_sudo}
-\title{Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.}
+\title{Algorithme qui masque certaines valeurs du sudoku pour commencer a jouer.}
 \usage{
 play_sudo(A, N)
 }
@@ -12,8 +12,8 @@ play_sudo(A, N)
 \item{N, }{Nombre de valeurs manquantes dans le sudoku}
 }
 \value{
-Une matrice 9x9 de sudoku prête à jouer.
+Une matrice 9x9 de sudoku prete a jouer.
 }
 \description{
-Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.
+Algorithme qui masque certaines valeurs du sudoku pour commencer a jouer.
 }

@@ -2,24 +2,24 @@
 % Please edit documentation in R/is_valid.R
 \name{is_valid}
 \alias{is_valid}
-\title{Cette fonction elle vérifie si un sudoku est valide ou pas
-(pas de nombre qui se répéte dans une méme ligne, colonne ou bloc 3x3)}
+\title{Cette fonction elle verifie si un sudoku est valide ou pas
+(pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)}
 \usage{
 is_valid(A, nrow, ncol, num)
 }
 \arguments{
 \item{A}{Sudoku (Matrice  9x9)}
 
-\item{nrow}{Numéro de la ligne}
+\item{nrow}{Numero de la ligne}
 
-\item{ncol}{Numéro de la colonne}
+\item{ncol}{Numero de la colonne}
 
-\item{num}{Un chiffre de 1 à 9}
+\item{num}{Un chiffre de 1 a 9}
 }
 \value{
 TRUE si le sudoku est valide, FALSE sinon.
 }
 \description{
-Cette fonction elle vérifie si un sudoku est valide ou pas
-(pas de nombre qui se répéte dans une méme ligne, colonne ou bloc 3x3)
+Cette fonction elle verifie si un sudoku est valide ou pas
+(pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)
 }

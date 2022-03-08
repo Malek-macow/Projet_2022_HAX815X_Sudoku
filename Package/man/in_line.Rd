@@ -2,20 +2,20 @@
 % Please edit documentation in R/in_line.R
 \name{in_line}
 \alias{in_line}
-\title{Vérifie si un chiffre existe déjà dans une ligne donnée}
+\title{Verifie si un chiffre existe deja dans une ligne donnee}
 \usage{
 in_line(A, nrow, num)
 }
 \arguments{
 \item{A}{Matrice  9x9}
 
-\item{nrow}{numéro de la ligne}
+\item{nrow}{numero de la ligne}
 
-\item{num}{un chiffre de 1 à 9}
+\item{num}{un chiffre de 1 a 9}
 }
 \value{
-True si le chiffre existe déjà dans la ligne et False sinon.
+True si le chiffre existe deja dans la ligne et False sinon.
 }
 \description{
-Vérifie si un chiffre existe déjà dans une ligne donnée
+Verifie si un chiffre existe deja dans une ligne donnee
 }

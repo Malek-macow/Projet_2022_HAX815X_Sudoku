@@ -2,16 +2,16 @@
 % Please edit documentation in R/solve_sudo.R
 \name{solve_sudo}
 \alias{solve_sudo}
-\title{Résolue le sudoku par la méthode du backtracking}
+\title{Resolue le sudoku par la methode du backtracking}
 \usage{
 solve_sudo(sudoku)
 }
 \arguments{
-\item{sudoku}{Matrice  9x9 (avec des valeurs manquantes NA et non pas des zéros)}
+\item{sudoku}{Matrice  9x9 (avec des valeurs manquantes NA et non pas des zeros)}
 }
 \value{
-Liste qui contient le sudoku résolu et le nombre de retour que l'algorithme a fait pour le résoudre
+Liste qui contient le sudoku resolu et le nombre de retour que l'algorithme a fait pour le resoudre
 }
 \description{
-Résolue le sudoku par la méthode du backtracking
+Resolue le sudoku par la methode du backtracking
 }

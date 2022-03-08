@@ -2,13 +2,13 @@
 % Please edit documentation in R/sudo_ele.R
 \name{sudo_ele}
 \alias{sudo_ele}
-\title{Produit un sudoku élémentaire de manière aléatoire}
+\title{Produit un sudoku elementaire de maniere aleatoire}
 \usage{
 sudo_ele()
 }
 \value{
-Une matrice 9x9 correspondant à un sudoku élémentaire
+Une matrice 9x9 correspondant a un sudoku elementaire
 }
 \description{
-Produit un sudoku élémentaire de manière aléatoire
+Produit un sudoku elementaire de maniere aleatoire
 }

@@ -7,10 +7,10 @@
 game(diff)
 }
 \arguments{
-\item{diff, }{Une chaine de caractere appartenant a c("Facile", "Moyen", "Difficile", "Cauchemar")}
+\item{diff, }{Une chaine de caractere appartenant a "Facile", "Moyen", "Difficile", "Cauchemar"}
 }
 \value{
-une liste contenant : un sudoku de difficulté diff, sa solution, et le nombre de backtracking nécessaire à l'algorithme pour le résoudre.
+une liste contenant : un sudoku de difficulte diff, sa solution, et le nombre de backtracking necessaire a l'algorithme pour le resoudre.
 }
 \description{
 A partir d'une difficulte, retourne un sudoku correspondant avec sa solution.

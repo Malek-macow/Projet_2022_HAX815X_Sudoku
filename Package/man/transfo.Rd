@@ -2,7 +2,7 @@
 % Please edit documentation in R/transfo.R
 \name{transfo}
 \alias{transfo}
-\title{Transforme une matrice 9x9 avec des NA en matrice 9x9 avec des zeros à la place.}
+\title{Transforme une matrice 9x9 avec des NA en matrice 9x9 avec des zeros a la place.}
 \usage{
 transfo(A)
 }
@@ -13,5 +13,5 @@ transfo(A)
 Matrice 9x9 avec des zeros au lieu des NA
 }
 \description{
-Transforme une matrice 9x9 avec des NA en matrice 9x9 avec des zeros à la place.
+Transforme une matrice 9x9 avec des NA en matrice 9x9 avec des zeros a la place.
 }

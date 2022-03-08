@@ -13,7 +13,7 @@ is_possible(A, nrow, ncol, num)
 
 \item{ncol}{numero de la colonne}
 
-\item{num}{un chiffre de 1 ? 9}
+\item{num}{un chiffre de 1 a 9}
 }
 \value{
 TRUE si l'emplacement est possible et FALSE sinon

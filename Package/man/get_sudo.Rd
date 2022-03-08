@@ -2,13 +2,13 @@
 % Please edit documentation in R/get_sudo.R
 \name{get_sudo}
 \alias{get_sudo}
-\title{Génère un sudoku aléatoire à partir d'un sudoku élémentaire.}
+\title{Genere un sudoku aleatoire a partir d'un sudoku elementaire.}
 \usage{
 get_sudo()
 }
 \value{
-Une matrice 9x9 correspondant à un sudoku élémentaire
+Une matrice 9x9 correspondant a un sudoku elementaire
 }
 \description{
-Génère un sudoku aléatoire à partir d'un sudoku élémentaire.
+Genere un sudoku aleatoire a partir d'un sudoku elementaire.
 }

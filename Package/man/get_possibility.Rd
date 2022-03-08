@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_possibility.R
 \name{get_possibility}
 \alias{get_possibility}
-\title{Calcule le nombre de possibilité pour chaque case du sudoku (matrice 9x9)}
+\title{Calcule le nombre de possibilite pour chaque case du sudoku (matrice 9x9)}
 \usage{
 get_possibility(A)
 }
@@ -10,8 +10,8 @@ get_possibility(A)
 \item{A}{Matrice  9x9}
 }
 \value{
-Liste qui contient une matrice 9x9 (avec les cases remplis par le nombre de possiblités) et une Dataframe
+Liste qui contient une matrice 9x9 (avec les cases remplis par le nombre de possiblites) et une Dataframe qui contient la ligne et la colonne des cases vides avec leurs nombre de possibilite
 }
 \description{
-Calcule le nombre de possibilité pour chaque case du sudoku (matrice 9x9)
+Calcule le nombre de possibilite pour chaque case du sudoku (matrice 9x9)
 }
