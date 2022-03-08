@@ -3,10 +3,13 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: BOUARROUDJ Abdelmalek & CAPEL Alexandre
-Maintainer:  BOUARROUDJ Abdelmalek & CAPEL Alexandre <abdelmalek.bouarroudj@etu.umontpellier.fr>, <alexandre.capel@etu.umontpellier.fr>
+Maintainer: BOUARROUDJ Abdelmalek & CAPEL Alexandre <abdelmalek.bouarroudj@etu.umontpellier.fr>, <alexandre.capel@etu.umontpellier.fr>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
