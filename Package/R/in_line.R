@@ -8,6 +8,3 @@
 in_line = function(A, nrow, num) {
   num %in% A[nrow,]
 }
-
-
-

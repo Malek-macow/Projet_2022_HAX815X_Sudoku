@@ -2,7 +2,7 @@
 % Please edit documentation in R/is_valid.R
 \name{is_valid}
 \alias{is_valid}
-\title{Cette fonction elle verifie si un sudoku est valide ou pas
+\title{Cette fonction verifie si un sudoku est valide ou non
 (pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)}
 \usage{
 is_valid(A, nrow, ncol, num)
@@ -20,6 +20,6 @@ is_valid(A, nrow, ncol, num)
 TRUE si le sudoku est valide, FALSE sinon.
 }
 \description{
-Cette fonction elle verifie si un sudoku est valide ou pas
+Cette fonction verifie si un sudoku est valide ou non
 (pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)
 }

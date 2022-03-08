@@ -1,4 +1,4 @@
-#' Cette fonction elle verifie si un sudoku est valide ou pas
+#' Cette fonction verifie si un sudoku est valide ou non
 #' (pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)
 #'
 #' @param A Sudoku (Matrice  9x9)
