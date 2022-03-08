@@ -7,7 +7,7 @@
 solve_sudo(sudoku)
 }
 \arguments{
-\item{sudoku}{Matrice  9x9 (avec des valeurs manquantes NA et non pas des zeros)}
+\item{sudoku}{Matrice  9x9 (avec des valeurs manquantes NA et non pas des zéros)}
 }
 \value{
 Liste qui contient le sudoku résolu et le nombre de retour que l'algorithme a fait pour le résoudre

@@ -4,16 +4,15 @@
 \alias{play_sudo}
 \title{Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.}
 \usage{
-play_sudo(A)
+play_sudo(A, N)
 }
 \arguments{
 \item{A, }{Matrice 9x9}
+
+\item{N, }{Nombre de valeurs manquantes dans le sudoku}
 }
 \value{
 Une matrice 9x9 de sudoku prête à jouer.
-
-
-Note : l'algorithme est encore élémentaire mais ce n'est qu'une esquisse
 }
 \description{
 Algorithme qui masque certaines valeurs du sudoku pour commencer à jouer.

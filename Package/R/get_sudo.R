@@ -1,6 +1,8 @@
 #' Génère un sudoku aléatoire à partir d'un sudoku élémentaire.
 #'
+#' @param
 #'
+#' @return Une matrice 9x9 correspondant à un sudoku élémentaire
 #'
 
 get_sudo <- function(){

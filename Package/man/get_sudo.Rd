@@ -6,6 +6,9 @@
 \usage{
 get_sudo()
 }
+\value{
+Une matrice 9x9 correspondant à un sudoku élémentaire
+}
 \description{
 Génère un sudoku aléatoire à partir d'un sudoku élémentaire.
 }
