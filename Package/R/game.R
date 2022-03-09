@@ -3,6 +3,8 @@
 #' @param diff, Une chaine de caractere appartenant a "Facile", "Moyen", "Difficile", "Cauchemar"
 #' @return une liste contenant : un sudoku de difficulte diff, sa solution, et le nombre de backtracking necessaire a l'algorithme pour le resoudre.
 #' @export
+#' @examples
+#' game("Difficile")
 game <- function(diff) {
   # détermination du nombre de backtracking en fonction de la difficulté
 

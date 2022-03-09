@@ -19,3 +19,6 @@ True si le chiffre existe deja dans la colonne et False sinon.
 \description{
 Verifie si un chiffre existe deja dans une colonne
 }
+\examples{
+in_col(sudo_ele(),1,8)
+}

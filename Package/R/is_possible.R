@@ -4,8 +4,10 @@
 #' @param nrow numero de la ligne
 #' @param ncol numero de la colonne
 #' @param num un chiffre de 1 a 9
-#'
 #' @return TRUE si l'emplacement est possible et FALSE sinon
+#' @export
+#' @examples
+#' is_possible(play_sudo(sudo_ele(),50),1,1,4)
 is_possible = function(A, nrow, ncol, num) {
   if (isFALSE(in_col(A, ncol, num)) &&
       isFALSE(in_line(A, nrow, num)) &&

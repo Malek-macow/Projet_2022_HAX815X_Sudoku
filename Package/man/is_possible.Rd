@@ -21,3 +21,6 @@ TRUE si l'emplacement est possible et FALSE sinon
 \description{
 Verifie si l'emplacement du chiffre dans un sudoku est possible
 }
+\examples{
+is_possible(play_sudo(sudo_ele(),50),1,1,4)
+}

@@ -19,3 +19,6 @@ True si le chiffre existe deja dans la ligne et False sinon.
 \description{
 Verifie si un chiffre existe deja dans une ligne donnee
 }
+\examples{
+in_line(sudo_ele(),1,6)
+}

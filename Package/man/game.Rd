@@ -15,3 +15,6 @@ une liste contenant : un sudoku de difficulte diff, sa solution, et le nombre de
 \description{
 A partir d'une difficulte, retourne un sudoku correspondant avec sa solution.
 }
+\examples{
+game("Difficile")
+}

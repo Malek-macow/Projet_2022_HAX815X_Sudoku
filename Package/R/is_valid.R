@@ -5,8 +5,10 @@
 #' @param nrow Numero de la ligne
 #' @param ncol Numero de la colonne
 #' @param num Un chiffre de 1 a 9
-#'
 #' @return TRUE si le sudoku est valide, FALSE sinon.
+#' @export
+#' @examples
+#' is_valid(sudo_ele(),8,2,3)
 is_valid <- function(A, nrow, ncol, num) {
   A[nrow, ncol] <- NA
   if (isFALSE(in_col(A, ncol, num)) &&

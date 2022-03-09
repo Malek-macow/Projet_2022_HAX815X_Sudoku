@@ -1,11 +1,10 @@
 Package: MALEX
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Sudoku avec R 
 Version: 0.1.0
-Author: BOUARROUDJ Abdelmalek & CAPEL Alexandre
-Maintainer: BOUARROUDJ Abdelmalek & CAPEL Alexandre <abdelmalek.bouarroudj@etu.umontpellier.fr>, <alexandre.capel@etu.umontpellier.fr>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: c(person("Abdelmalek", "BOUARROUDJ", , "abdelmalek.bouarroudj@etu.umontpellier.fr", role = c("aut", "cre")),person("Alexandre", "CAPEL", , "alexandre.capel@etu.umontpellier.fr", role = c("aut", "cre"))
+Maintainer: Abdelmalek BOUARROUDJ <abdelmalek.bouarroudj@etu.umontpellier.fr>
+Description: Genere, joue et resout des puzzles Sudoku.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

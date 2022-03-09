@@ -23,3 +23,6 @@ TRUE si le sudoku est valide, FALSE sinon.
 Cette fonction verifie si un sudoku est valide ou non
 (pas de nombre qui se repete dans une ligne, colonne ou bloc 3x3)
 }
+\examples{
+is_valid(sudo_ele(),8,2,3)
+}

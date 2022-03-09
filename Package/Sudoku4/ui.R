@@ -8,7 +8,7 @@ shinyUI(fluidPage(
   theme = shinytheme("superhero"),
   titlePanel(h1(strong(em(
     HTML("Sudoku4")
-  )), ), windowTitle = "Jeu de Sudoku"),
+  )),), windowTitle = "Jeu de Sudoku"),
 
   p(HTML("Développé par "), em(HTML(
     "BOUARROUDJ Abdelmalek"
@@ -122,7 +122,7 @@ shinyUI(fluidPage(
         12,
         plotOutput("plot1", click = "plot_click"),
         plotOutput("sudoku")
-      ),),
+      ), ),
       p(
         HTML("Application développée avec R Shiny, code disponible sur notre "),
         a(href = "https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku", "git"),

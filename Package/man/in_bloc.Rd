@@ -21,3 +21,6 @@ Renvoie True si le chiffre existe deja dans le bloc 3x3 et False sinon.
 \description{
 Verifie si un chiffre existe deja dans un bloc 3x3
 }
+\examples{
+in_bloc(sudo_ele(),1,1,6)
+}
