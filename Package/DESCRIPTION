@@ -1,10 +1,10 @@
 Package: MALEX
 Type: Package
-Title: Sudoku avec R 
+Title: Sudoku with R 
 Version: 0.1.0
-Author: c(person("Abdelmalek", "BOUARROUDJ", , "abdelmalek.bouarroudj@etu.umontpellier.fr", role = c("aut", "cre")),person("Alexandre", "CAPEL", , "alexandre.capel@etu.umontpellier.fr", role = c("aut", "cre"))
+Author: Alexandre CAPEL <alexandre.capel@etu.umontpellier.fr>
 Maintainer: Abdelmalek BOUARROUDJ <abdelmalek.bouarroudj@etu.umontpellier.fr>
-Description: Genere, joue et resout des puzzles Sudoku.
+Description: Generate, play and solve Sudoku puzzles.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
