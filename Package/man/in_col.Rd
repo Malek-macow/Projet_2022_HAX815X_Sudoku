@@ -2,7 +2,7 @@
 % Please edit documentation in R/in_col.R
 \name{in_col}
 \alias{in_col}
-\title{Verifie si un chiffre existe deja dans une colonne}
+\title{Verification par colonne}
 \usage{
 in_col(A, ncol, num)
 }
@@ -17,7 +17,8 @@ in_col(A, ncol, num)
 True si le chiffre existe deja dans la colonne et False sinon.
 }
 \description{
-Verifie si un chiffre existe deja dans une colonne
+Cette fonction verifie si un chiffre existe deja dans une colonne
+du sudoku.
 }
 \examples{
 in_col(sudo_ele(),1,8)

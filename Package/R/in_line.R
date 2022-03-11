@@ -1,4 +1,7 @@
-#' Verifie si un chiffre existe deja dans une ligne donnee
+#' @title Verification par ligne
+#'
+#' @description Cette fonction verifie si un chiffre existe deja dans une ligne
+#' du sudoku.
 #'
 #' @param A Matrice  9x9
 #' @param nrow numero de la ligne
@@ -7,6 +10,8 @@
 #' @export
 #' @examples
 #' in_line(sudo_ele(),1,6)
+
+
 in_line = function(A, nrow, num) {
   num %in% A[nrow,]
 }

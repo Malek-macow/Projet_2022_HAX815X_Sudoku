@@ -2,7 +2,7 @@
 % Please edit documentation in R/is_possible.R
 \name{is_possible}
 \alias{is_possible}
-\title{Verifie si l'emplacement du chiffre dans un sudoku est possible}
+\title{Verification globale}
 \usage{
 is_possible(A, nrow, ncol, num)
 }
@@ -19,8 +19,13 @@ is_possible(A, nrow, ncol, num)
 TRUE si l'emplacement est possible et FALSE sinon
 }
 \description{
-Verifie si l'emplacement du chiffre dans un sudoku est possible
+Cette fonction verifie si l'emplacement du chiffre dans un
+sudoku est possible. Cette dernière utilise les differentes fonctions de
+verification du package.
 }
 \examples{
 is_possible(play_sudo(sudo_ele(),50),1,1,4)
+}
+\seealso{
+Du package MALEX : in_line, in_col, in_bloc.
 }

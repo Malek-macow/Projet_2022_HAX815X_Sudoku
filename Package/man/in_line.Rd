@@ -2,7 +2,7 @@
 % Please edit documentation in R/in_line.R
 \name{in_line}
 \alias{in_line}
-\title{Verifie si un chiffre existe deja dans une ligne donnee}
+\title{Verification par ligne}
 \usage{
 in_line(A, nrow, num)
 }
@@ -17,7 +17,8 @@ in_line(A, nrow, num)
 True si le chiffre existe deja dans la ligne et False sinon.
 }
 \description{
-Verifie si un chiffre existe deja dans une ligne donnee
+Cette fonction verifie si un chiffre existe deja dans une ligne
+du sudoku.
 }
 \examples{
 in_line(sudo_ele(),1,6)
