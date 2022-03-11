@@ -1,12 +1,32 @@
-#' Resolue le sudoku par la methode du backtracking
+#' @title Resolution du sudoku
 #'
-#' @param sudoku Matrice  9x9 (avec des valeurs manquantes NA et non pas des zeros)
-#' @return Liste qui contient le sudoku resolu et le nombre de retour que l'algorithme a fait pour le resoudre
+#' @description Cette fonction resoud un sudoku donne par la methode du
+#' backtracking. Cette-derniere consiste a remplir le sudoku au fur et a mesure
+#' de la maniere suivante : si il y a plusieurs possibilites a une case, on en
+#' choisit une puis on continue a remplir. Des qu'il y a une contradiction, on
+#' retourne en arriere jusqu'a la derniere fois ou on a du faire un choix. Le
+#' de backtracking nous permet notamment de construire une echelle de difficulte.
+#'
+#' @seealso Dans le package MALEX, la fonction game, pour voir l'utilisation du
+#' nombre de backtracking.
+#'
+#' @param sudoku Matrice 9x9 (avec des valeurs manquantes NA et non pas des zeros)
+#'
+#' @return Liste qui contient le sudoku resolu et le nombre de retour que
+#' l'algorithme a fait pour le resoudre.
+#'
 #' @export
+#'
+#' @examples
+#' A <- play_sudo(sudo_ele(), 45)
+#' solve_sudo(A)
+#'
+
+
 solve_sudo <- function(sudoku) {
+
   solve_case <- function(nrow, ncol) {
-    valactu <-
-      m$A[nrow, ncol] #On enregistre le chiffre de la case en premier
+    valactu <-m$A[nrow, ncol] #On enregistre le chiffre de la case en premier
 
     if (valactu == 9) {
       #si le chiffre déjà dans la case est 9 on le remet à zero

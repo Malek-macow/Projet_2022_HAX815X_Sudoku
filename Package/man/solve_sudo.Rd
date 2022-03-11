@@ -2,16 +2,31 @@
 % Please edit documentation in R/solve_sudo.R
 \name{solve_sudo}
 \alias{solve_sudo}
-\title{Resolue le sudoku par la methode du backtracking}
+\title{Resolution du sudoku}
 \usage{
 solve_sudo(sudoku)
 }
 \arguments{
-\item{sudoku}{Matrice  9x9 (avec des valeurs manquantes NA et non pas des zeros)}
+\item{sudoku}{Matrice 9x9 (avec des valeurs manquantes NA et non pas des zeros)}
 }
 \value{
-Liste qui contient le sudoku resolu et le nombre de retour que l'algorithme a fait pour le resoudre
+Liste qui contient le sudoku resolu et le nombre de retour que
+l'algorithme a fait pour le resoudre.
 }
 \description{
-Resolue le sudoku par la methode du backtracking
+Cette fonction resoud un sudoku donne par la methode du
+backtracking. Cette-derniere consiste a remplir le sudoku au fur et a mesure
+de la maniere suivante : si il y a plusieurs possibilites a une case, on en
+choisit une puis on continue a remplir. Des qu'il y a une contradiction, on
+retourne en arriere jusqu'a la derniere fois ou on a du faire un choix. Le
+de backtracking nous permet notamment de construire une echelle de difficulte.
+}
+\examples{
+A <- play_sudo(sudo_ele(), 45)
+solve_sudo(A)
+
+}
+\seealso{
+Dans le package MALEX, la fonction game, pour voir l'utilisation du
+nombre de backtracking.
 }
