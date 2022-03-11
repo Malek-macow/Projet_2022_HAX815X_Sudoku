@@ -2,18 +2,25 @@
 % Please edit documentation in R/play_sudo.R
 \name{play_sudo}
 \alias{play_sudo}
-\title{Algorithme qui masque certaines valeurs du sudoku pour commencer a jouer.}
+\title{Suppression des cases}
 \usage{
 play_sudo(A, N)
 }
 \arguments{
-\item{A, }{Matrice 9x9}
+\item{A}{Matrice 9x9}
 
-\item{N, }{Nombre de valeurs manquantes dans le sudoku}
+\item{N}{Nombre de valeurs manquantes dans le sudoku}
 }
 \value{
-Une matrice 9x9 de sudoku prete a jouer.
+Une matrice 9x9 de sudoku pret a jouer.
 }
 \description{
-Algorithme qui masque certaines valeurs du sudoku pour commencer a jouer.
+Algorithme qui masque certaines valeurs du sudoku pour commencer
+a jouer. Les cases sont masquees de maniere aleatoire, jusqu'a atteindre un certain
+nombre de case vide.
+}
+\examples{
+A <- get_sudo()
+play_sudo(A, 45)
+
 }

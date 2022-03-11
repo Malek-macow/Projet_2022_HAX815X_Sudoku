@@ -17,4 +17,3 @@
 in_bloc = function(A, nrow, ncol, num) {
   num %in% A[(nrow - 1) %/% 3 * 3 + (1:3), (ncol - 1) %/% 3 * 3 + (1:3)]
 }
-

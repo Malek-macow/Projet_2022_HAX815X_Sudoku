@@ -1,9 +1,17 @@
-#' Affiche un sudoku.
+#' @title Affichage d'un sudoku
 #'
-#' @param A, Matrice 9x9
-#' @return Affichage graphique du sudoku
+#' @description Cette fonction permet d'afficher un sudoku sous sa forme
+#' standard.
+#'
+#' @param A Matrice 9x9
+#'
+#' @return Affichage graphique du sudoku.
+#'
 #' @importFrom graphics lines text
+#'
 #' @export
+
+
 plot_sudoku <- function(A) {
   plot(
     1,
