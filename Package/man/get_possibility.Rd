@@ -19,6 +19,6 @@ Calcule le nombre de possibilite pour chaque case d'un sudoku dont
 certaines ont ete cachees.
 }
 \examples{
-A <- play_sudo()  # pour avoir un sudoku vide
+A <- play_sudo(sudo_ele(), 45)  # pour avoir un sudoku vide
 get_possibility(A)
 }
