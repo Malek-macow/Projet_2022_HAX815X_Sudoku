@@ -2,13 +2,16 @@
 % Please edit documentation in R/get_sudo.R
 \name{get_sudo}
 \alias{get_sudo}
-\title{Genere un sudoku aleatoire a partir d'un sudoku elementaire.}
+\title{Generation d'un sudoku aleatoire}
 \usage{
 get_sudo()
 }
 \value{
-Une matrice 9x9 correspondant a un sudoku elementaire
+Une matrice 9x9 correspondant a un sudoku complet.
 }
 \description{
-Genere un sudoku aleatoire a partir d'un sudoku elementaire.
+La fonction genere un sudoku aleatoire a partir d'un sudoku
+elementaire. Pour ce faire, on permute successivement les lignes ou les
+colonnes d'un meme bloc. Pour avoir un nombre conséquent de possibilite, 500
+permutations sont effectuees.
 }

@@ -1,10 +1,27 @@
-#' A partir d'une difficulte, retourne un sudoku correspondant avec sa solution.
+#' @title Sudoku a difficulte controlee
 #'
-#' @param diff, Une chaine de caractere appartenant a "Facile", "Moyen", "Difficile", "Cauchemar"
-#' @return une liste contenant : un sudoku de difficulte diff, sa solution, et le nombre de backtracking necessaire a l'algorithme pour le resoudre.
+#'
+#' @description A partir d'une difficulte, retourne un sudoku correspondant avec sa solution.
+#' Pour pouvoir retourner le bon sudoku, on associe a chaque difficulte un ensemble de valeur
+#' possible pour le nombre de backtracking, ainsi que le nombre de case a effacer.
+#'
+#' - Pour "Facile" : il y a entre 0 et 100 backtraking avec 40 cases vides.
+#'
+#' - Pour "Moyen" : il y a entre 100 et 1000 backtraking avec 45 cases vides.
+#'
+#' - Pour "Difficile" : il y a entre 1000 et 10000 backtraking avec 50 cases vides.
+#'
+#' - Pour "Cauchemar" : il y a entre 10000 et 100000 backtraking avec 55 cases vides.
+#'
+#'
+#' @param diff Une chaine de caractere appartenant a "Facile", "Moyen", "Difficile", "Cauchemar"
+#' @return Une liste contenant : un sudoku de difficulte diff, sa solution, et le nombre de backtracking necessaire a l'algorithme pour le resoudre.
 #' @export
 #' @examples
 #' game("Difficile")
+
+
+
 game <- function(diff) {
   # détermination du nombre de backtracking en fonction de la difficulté
 

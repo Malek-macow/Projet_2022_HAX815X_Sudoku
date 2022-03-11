@@ -26,7 +26,7 @@ shinyServer(function(input, output) {
   observeEvent(input$Nouveau, {
     shinyalert(
       "Attention !",
-      "Une fois vous commencez si vous regarder la solution la partie s'arrétera.",
+      "Une fois le jeu lancé, si vous regardez la solution la partie s'arrêtera.",
       type = "info",
       showConfirmButton = T,
       confirmButtonText = "OK"

@@ -2,6 +2,7 @@
 #'
 #' @return Une matrice 9x9 correspondant a un sudoku elementaire
 #' @export
+
 sudo_ele <- function() {
   A <- matrix(NA, 9, 9)   # création de la matrice
   A[1, ] <-

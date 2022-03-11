@@ -2,12 +2,12 @@
 % Please edit documentation in R/in_bloc.R
 \name{in_bloc}
 \alias{in_bloc}
-\title{Verifie si un chiffre existe deja dans un bloc 3x3}
+\title{Verification par bloc}
 \usage{
 in_bloc(A, nrow, ncol, num)
 }
 \arguments{
-\item{A, }{Matrice 9X9 sous forme d'un sudoku}
+\item{A}{Matrice 9X9 sous forme d'un sudoku}
 
 \item{nrow}{Numero de la ligne}
 
@@ -19,7 +19,8 @@ in_bloc(A, nrow, ncol, num)
 Renvoie True si le chiffre existe deja dans le bloc 3x3 et False sinon.
 }
 \description{
-Verifie si un chiffre existe deja dans un bloc 3x3
+Cette fonction verifie si un chiffre existe deja dans un bloc du
+sudoku.
 }
 \examples{
 in_bloc(sudo_ele(),1,1,6)

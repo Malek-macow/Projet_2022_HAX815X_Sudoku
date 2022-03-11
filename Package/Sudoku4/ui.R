@@ -104,14 +104,14 @@ shinyUI(fluidPage(
       verbatimTextOutput("passudoku"),
 
       modalDialog(
-        "- Pour pouvoir commencer à jouer il vous suffit de choisir en bas le niveau
+        "- Pour pouvoir commencer à jouer, il vous suffit de choisir en bas le niveau
             de difficulté puis de cliquer sur le bouton Générer nouveau Sudoku.",
         br(),
-        "- Pour Remplir ou supprimer une case il faut d'abord cliquer sur la case que vous voulez
-            remplir puis vérifier à gauche si c'est la bonne ligne et colonne que vous avez séléctionner.",
+        "- Pour remplir ou supprimer une case il faut d'abord cliquer sur la case que vous voulez
+            remplir puis vérifier à gauche si c'est la bonne ligne et colonne que vous avez séléctionné.",
         br(),
         "Bonne partie.",
-        title = "A lire attentivement !",
+        title = "À lire attentivement !",
         footer = modalButton("OK"),
         size = "l",
         easyClose = FALSE,

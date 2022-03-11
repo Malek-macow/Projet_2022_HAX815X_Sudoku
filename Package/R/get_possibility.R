@@ -1,8 +1,22 @@
-#' Calcule le nombre de possibilite pour chaque case du sudoku (matrice 9x9)
+#' @title Calcul des possibilites
 #'
-#' @param A Matrice  9x9
-#' @return Liste qui contient une matrice 9x9 (avec les cases remplis par le nombre de possiblites) et une Dataframe qui contient la ligne et la colonne des cases vides avec leurs nombre de possibilite
+#' @description Calcule le nombre de possibilite pour chaque case d'un sudoku dont
+#' certaines ont ete cachees.
+#'
+#' @param A matrice 9x9
+#'
+#' @return Liste qui contient une matrice 9x9 (avec les cases remplis par le
+#'  nombre de possiblites) et une Dataframe qui contient la ligne et la colonne
+#'  des cases vides avec leurs nombre de possibilite.
+#'
 #' @export
+#'
+#' @examples
+#' A <- play_sudo()  # pour avoir un sudoku vide
+#' get_possibility(A)
+
+
+
 get_possibility <- function(A) {
   P <- matrix(0, 9, 9)
   for (i in 1:9) {

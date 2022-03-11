@@ -1,7 +1,17 @@
-#' Genere un sudoku aleatoire a partir d'un sudoku elementaire.
+#' @title Generation d'un sudoku aleatoire
 #'
-#' @return Une matrice 9x9 correspondant a un sudoku elementaire
+#' @description La fonction genere un sudoku aleatoire a partir d'un sudoku
+#' elementaire. Pour ce faire, on permute successivement les lignes ou les
+#' colonnes d'un meme bloc. Pour avoir un nombre conséquent de possibilite, 500
+#' permutations sont effectuees.
+#'
+#' @return Une matrice 9x9 correspondant a un sudoku complet.
+#'
 #' @export
+#'
+#'
+
+
 get_sudo <- function() {
   A <- sudo_ele()
   for (i in (1:500)) {
