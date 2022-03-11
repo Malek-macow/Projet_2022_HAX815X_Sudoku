@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' A <- play_sudo()  # pour avoir un sudoku vide
+#' A <- play_sudo(sudo_ele(), 45)  # pour avoir un sudoku vide
 #' get_possibility(A)
 
 
