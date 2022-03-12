@@ -11,10 +11,13 @@ shinyUI(fluidPage(
     h1(
       strong(
         em(
-          HTML("Sudoku4")
+          HTML("<u style='color: darkorange'><p style='color: darkorange;
+                   text-align: center;
+                   font-family: Monaco;'>Sudoku MALEX</p></u>")
           )
         ),
       ),
+
     windowTitle = "Jeu de Sudoku"
     ),
 
@@ -26,15 +29,16 @@ shinyUI(fluidPage(
   hr(),
   sidebarLayout(
     sidebarPanel(
-      p(strong(HTML("Règles du jeu : \n "))),
+      p(strong(HTML("<u>Règles du jeu : \n</u>"))),
       p(
         HTML(
-          text = "Remplir les cases vides avec les chiffres de 1 à 9,
-                   de telle sorte qu'ils n'apparaissent qu'une fois par ligne,
-                   par colonne et par carré de 3x3 cases. Bon courage :)"
+          text = "<p style='font-family: emoji;'>Remplir les cases vides
+                  avec les chiffres de 1 à 9, de telle sorte qu'ils n'apparaissent
+                  qu'une fois par ligne, par colonne et par carré de 3x3 cases.
+                  Bon courage ԅ(≖‿≖ԅ)</p>"
         )
       ),
-      br(),
+      hr(),
       fixedRow(column(2,
                       p(HTML(
                         "   "
@@ -106,7 +110,11 @@ shinyUI(fluidPage(
                    label = "Afficher la solution",
                    style = "gradient",
                    color = 'warning'
-                   )
+                   ),
+                   tags$style("#Solution{font-size: 18px;
+                                  font-family: 'emoji';
+                                  text-align: center;
+                              }")
                  )
                ),
     ),
