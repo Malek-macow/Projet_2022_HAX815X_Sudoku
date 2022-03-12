@@ -6,14 +6,23 @@ devtools::load_all()
 
 shinyUI(fluidPage(
   theme = shinytheme("superhero"),
-  titlePanel(h1(strong(em(
-    HTML("Sudoku4")
-  )),), windowTitle = "Jeu de Sudoku"),
 
-  p(HTML("Développé par "), em(HTML(
-    "BOUARROUDJ Abdelmalek"
-  )),
-  HTML("et"), em(HTML("CAPEL Alexandre."))),
+  titlePanel(
+    h1(
+      strong(
+        em(
+          HTML("Sudoku4")
+          )
+        ),
+      ),
+    windowTitle = "Jeu de Sudoku"
+    ),
+
+  p(HTML("Développé par "),
+    em(HTML("BOUARROUDJ Abdelmalek")),
+    HTML("et"),
+    em(HTML("CAPEL Alexandre."))
+    ),
   hr(),
   sidebarLayout(
     sidebarPanel(
@@ -97,18 +106,29 @@ shinyUI(fluidPage(
                    label = "Afficher la solution",
                    style = "gradient",
                    color = 'warning'
+                   )
                  )
-               ))
+               ),
     ),
     mainPanel(
-      verbatimTextOutput("passudoku"),
+      textOutput('text1'),
+      tags$strong(tags$style("#text1{color: orange;
+                                 font-size: 20px;
+                                 font-style: normal;
+                                 text-align: center;
+                                 font-family: 'Lucida Bright';
+                                 }"
+                           )
+                ),
+      br(),
 
       modalDialog(
         "- Pour pouvoir commencer à jouer, il vous suffit de choisir en bas le niveau
             de difficulté puis de cliquer sur le bouton Générer nouveau Sudoku.",
         br(),
-        "- Pour remplir ou supprimer une case il faut d'abord cliquer sur la case que vous voulez
-            remplir puis vérifier à gauche si c'est la bonne ligne et colonne que vous avez séléctionné.",
+        "- Pour remplir ou supprimer une case il faut d'abord cliquer sur
+        la case que vous voulez remplir puis vérifier à gauche si c'est la bonne
+        ligne et colonne que vous avez séléctionné.",
         br(),
         "Bonne partie.",
         title = "À lire attentivement !",
@@ -118,11 +138,17 @@ shinyUI(fluidPage(
         fade = TRUE,
       ),
 
-      fluidRow(column(
-        12,
-        plotOutput("plot1", click = "plot_click"),
-        plotOutput("sudoku")
-      ), ),
+      fluidRow(
+        column(
+          12,
+          plotOutput("plot1", click = "plot_click"),
+          plotOutput("sudoku"),
+          tags$style("#plot1{
+                     text-align:center;
+                     }"
+                     )
+          ),
+        ),
       p(
         HTML("Application développée avec R Shiny, code disponible sur notre "),
         a(href = "https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku", "git"),

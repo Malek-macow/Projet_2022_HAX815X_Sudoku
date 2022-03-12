@@ -82,8 +82,8 @@ shinyServer(function(input, output) {
     }
   })
 
-  output$passudoku <- renderPrint({
-    return(v$affiche)
+  output$text1 <- renderText({
+    v$affiche
   })
 
   output$plot1 <- renderPlot({
@@ -93,7 +93,7 @@ shinyServer(function(input, output) {
     else{
       plot_sudoku(v$sudo)
     }
-  }, width = 500, height = 500)
+  }, width = 650, height = 650)
 
   observeEvent(input$mAj, {
     showNotification(v$mess)
