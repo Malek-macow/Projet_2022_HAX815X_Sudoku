@@ -88,6 +88,16 @@ shinyUI(fluidPage(
             size = "md"
           ),
           width = 5
+        ),
+        column(
+          actionBttn(
+            inputId = "check",
+            label = "Verifier",
+            style = 'gradient',
+            color = "warning",
+            size = "md"
+          ),
+          width = 12
         )
       ),
       h3(strong(HTML("Options de jeu"))),

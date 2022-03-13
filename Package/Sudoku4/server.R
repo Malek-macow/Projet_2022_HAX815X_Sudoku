@@ -7,7 +7,8 @@ shinyServer(function(input, output) {
     affiche = "Pas de sudoku initialisé",
     sudo = matrix(NA, 9, 9),
     sol = matrix(NA, 9, 9),
-    mess = "Bonne partie ;)"
+    mess = "Bonne partie ;)",
+    CHECK = " "
   )
 
 
@@ -31,6 +32,26 @@ shinyServer(function(input, output) {
       showConfirmButton = T,
       confirmButtonText = "OK"
     )
+  })
+  observeEvent(input$check, {
+    if (v$CHECK == "Félicitations vous avez réussi"){
+      shinyalert(
+        "Félicitaion !",
+        "Vous avez réuissi à résoudre le Sudoku.",
+        type = "success",
+        showConfirmButton = T,
+        confirmButtonText = "Une autre partie"
+      )
+    }
+    if (v$CHECK == "Oupss, Encore un effort !"){
+      shinyalert(
+        "Oupsss !",
+        "Encore un effort.",
+        type = "error",
+        showConfirmButton = T,
+        confirmButtonText = "Continuer"
+      )
+    }
   })
 
   observeEvent(input$Solution, {
@@ -80,6 +101,12 @@ shinyServer(function(input, output) {
     if (is.na(v$control[i, j])) {
       v$sudo[i, j]  <- NA
     }
+  })
+
+  observeEvent(input$check, {
+    if (check(v$sudo)){
+      v$CHECK <- "Félicitations vous avez réussi"
+    }else {v$CHECK <- "Oupss, Encore un effort !"}
   })
 
   output$text1 <- renderText({
