@@ -28,7 +28,7 @@ game <- function(diff) {
   if (diff == "Facile") {
     min <- 0
     max <- 100
-    N <- 2
+    N <- 40
   }
 
   if (diff == "Moyen") {
