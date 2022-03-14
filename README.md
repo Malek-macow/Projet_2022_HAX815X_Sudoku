@@ -27,6 +27,12 @@ Ces modules seront utiles pour lancer l'application.
 ### Lancement de l'application
 
 Pour pouvoir commencer à jouer avec l'application, il vous suffit d'installer le package **MALEX** puis d'appeller la `library(MALEX)` aprés il vous reste juste d'executer la fonction `runGame()`.
+Sinon vous pouvez ouvrire le fichier `app.R` situés dans le dossier `Sudoku4` et de cliquer sur le bouton "Run app" situé en haut du fichier :
+
+<p align="center">
+  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/run.jpg" width="900" title="Sudoku vide">
+</p>  
+
 
 Normalement une fenêtre s'ouvre à ce moment-là. Vous pouvez également ouvrir l'application dans votre navigateur en appuyant sur "Open in Browser".
 
