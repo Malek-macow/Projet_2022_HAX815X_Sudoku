@@ -28,10 +28,6 @@ Ces modules seront utiles pour lancer l'application.
 
 Pour pouvoir commencer à jouer avec l'application, d'installer le package **MALEX** puis de d'appeller la `library(MALEX)` aprés il vous reste juste d'executer la fonction `runGame()`.
 
-<p align="center">
-  <img src="https://github.com/Malek-macow/Projet_2022_HAX815X_Sudoku/blob/main/images/run.jpg" width="10000" title="Lancer l'application">
-</p>
-
 Normalement une fenêtre s'ouvre à ce moment-là. Vous pouvez également ouvrir l'application dans votre navigateur en appuyant sur "Open in Browser".
 
 ### Nouveau sudoku et sélection de difficulté
