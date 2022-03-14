@@ -26,7 +26,7 @@ Ces modules seront utiles pour lancer l'application.
 
 ### Lancement de l'application
 
-Pour pouvoir commencer à jouer avec l'application, d'installer le package **MALEX** puis de d'appeller la `library(MALEX)` aprés il vous reste juste d'executer la fonction `runGame()`.
+Pour pouvoir commencer à jouer avec l'application, il vous suffit d'installer le package **MALEX** puis d'appeller la `library(MALEX)` aprés il vous reste juste d'executer la fonction `runGame()`.
 
 Normalement une fenêtre s'ouvre à ce moment-là. Vous pouvez également ouvrir l'application dans votre navigateur en appuyant sur "Open in Browser".
 
