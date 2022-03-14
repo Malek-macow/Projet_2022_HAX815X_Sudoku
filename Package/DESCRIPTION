@@ -1,5 +1,5 @@
-Package: MALEX
 Type: Package
+Package: MALEX
 Title: Sudoku with R 
 Version: 0.1.0
 Author: Alexandre CAPEL <alexandre.capel@etu.umontpellier.fr>
@@ -7,6 +7,12 @@ Maintainer: Abdelmalek BOUARROUDJ <abdelmalek.bouarroudj@etu.umontpellier.fr>
 Description: Generate, play and solve Sudoku puzzles.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Imports: 
+    shinyalert,
+    shiny,
+    shinythemes,
+    shinyWidgets,
+    devtools
 LazyData: true
 RoxygenNote: 7.1.2
 Suggests: 
