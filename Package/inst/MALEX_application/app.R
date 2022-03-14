@@ -317,7 +317,7 @@ server <- shinyServer(function(input, output) {
 
 
 
-# Define server logic required to draw a histogram
+
 server <- function(input, output) {
   v <- reactiveValues(
     affiche = "Pas de sudoku initialisé",
